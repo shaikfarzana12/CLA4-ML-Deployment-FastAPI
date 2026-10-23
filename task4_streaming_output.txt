@@ -1,0 +1,12 @@
+=== STREAMING INFERENCE (1 record / second) ===
+[Record 01] Pclass=2 Sex=female Age=25.0 Fare=30.00 Embarked=S -> Prediction: Survived (p=0.889) | Actual: 1
+[Record 02] Pclass=3 Sex=male Age=30.0 Fare=8.05 Embarked=S -> Prediction: Did not survive (p=0.128) | Actual: 0
+[Record 03] Pclass=3 Sex=female Age=35.0 Fare=20.25 Embarked=S -> Prediction: Did not survive (p=0.392) | Actual: 1
+[Record 04] Pclass=3 Sex=male Age=29.0 Fare=7.88 Embarked=S -> Prediction: Did not survive (p=0.108) | Actual: 0
+[Record 05] Pclass=1 Sex=female Age=24.0 Fare=69.30 Embarked=C -> Prediction: Survived (p=0.987) | Actual: 1
+[Record 06] Pclass=3 Sex=male Age=nan Fare=7.75 Embarked=Q -> Prediction: Did not survive (p=0.125) | Actual: 0
+[Record 07] Pclass=1 Sex=male Age=48.0 Fare=52.00 Embarked=S -> Prediction: Did not survive (p=0.364) | Actual: 1
+[Record 08] Pclass=3 Sex=male Age=29.0 Fare=7.90 Embarked=C -> Prediction: Did not survive (p=0.134) | Actual: 1
+[Record 09] Pclass=3 Sex=male Age=nan Fare=14.46 Embarked=C -> Prediction: Did not survive (p=0.186) | Actual: 0
+[Record 10] Pclass=3 Sex=male Age=34.0 Fare=8.05 Embarked=S -> Prediction: Did not survive (p=0.118) | Actual: 0
+Stream finished.

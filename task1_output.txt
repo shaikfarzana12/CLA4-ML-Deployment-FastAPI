@@ -1,0 +1,15 @@
+Dataset shape: (891, 12)
+Missing values:
+Pclass        0
+Sex           0
+Embarked      2
+Age         177
+SibSp         0
+Parch         0
+Fare          0
+Survived      0
+dtype: int64
+Train size: 712, Test size: 179
+Test accuracy: 0.7989
+Saved pipeline -> model.pkl
+Saved 179 unseen records -> data/unseen_records.csv

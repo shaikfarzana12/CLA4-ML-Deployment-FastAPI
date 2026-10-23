@@ -1,0 +1,7 @@
+GET /health -> {'status': 'ok', 'model_loaded': True}
+
+Valid request  : {'Pclass': 1, 'Sex': 'female', 'Age': 29, 'SibSp': 0, 'Parch': 0, 'Fare': 80.5, 'Embarked': 'C'}
+Status 200 -> {'prediction': 1, 'result': 'Survived', 'survival_probability': 0.992}
+
+Invalid request: {'Pclass': 5, 'Sex': 'alien', 'Age': -4, 'SibSp': 0, 'Parch': 0, 'Fare': 'abc', 'Embarked': 'X'}
+Status 422 -> {'detail': [{'type': 'literal_error', 'loc': ['body', 'Pclass'], 'msg': 'Input should be 1, 2 or 3', 'input': 5, 'ctx': {'expected': '1, 2 or 3'}}, {'type': 'literal_error', 'loc': ['body', 'Sex'], 'msg': "Input should be 'male' or 'female'", 'input': 'alien', 'ctx': {'expected': "'male' or 'female'"}}, {'type': 'greater_than_equal', 'loc': ['body', 'Age'], 'msg': 'Input should be greater than or equal to 0', 'input': -4, 'ctx': {'ge': 0.0}}, {'type': 'float_parsing', 'loc': ['body', 'Fare'], 'msg': 'Input should be a valid number, unable to parse string as a number', 'input': 'abc'}, {'type': 'literal_error', 'loc': ['body', 'Embarked'], 'msg': "Input should be 'S', 'C' or 'Q'", 'input': 'X', 'ctx': {'expected': "'S', 'C' or 'Q'"}}]}

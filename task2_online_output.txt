@@ -1,0 +1,13 @@
+=== ONLINE INFERENCE (single record) ===
+Passenger details:
+Pclass          3
+Sex          male
+Embarked        S
+Age          24.0
+SibSp           2
+Parch           0
+Fare        24.15
+
+Predicted: 0 (Did not survive)
+Survival probability: 0.115
+Actual   : 0
